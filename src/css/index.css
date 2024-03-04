@@ -1,0 +1,36 @@
+/* index.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  /* Import other CSS files */
+  @import './header.css';
+  @import './home.css';
+  @import './projects.css';
+  @import './project.css';
+  @import './contact.css';
+  
