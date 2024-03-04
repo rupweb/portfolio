@@ -1,0 +1,15 @@
+/* home.css */
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home h1 {
+    color: #333;
+  }
+  
+  .home img {
+    border-radius: 50%;
+    max-width: 150px;
+  }
+  
