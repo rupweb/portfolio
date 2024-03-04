@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Project One",
+    "deployedLink": "http://...",
+    "githubLink": "http://...",
+    "image": "project1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Project Two",
+    "deployedLink": "http://...",
+    "githubLink": "http://...",
+    "image": "project1.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Project Three",
+    "deployedLink": "http://...",
+    "githubLink": "http://...",
+    "image": "project1.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Project Four",
+    "deployedLink": "http://...",
+    "githubLink": "http://...",
+    "image": "project1.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Project Five",
+    "deployedLink": "http://...",
+    "githubLink": "http://...",
+    "image": "project1.jpg"
+  },
+  {
+      "id": 6,
+      "title": "Project Six",
+      "deployedLink": "http://...",
+      "githubLink": "http://...",
+      "image": "project1.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Project Seven",
+    "deployedLink": "http://...",
+    "githubLink": "http://...",
+    "image": "project1.jpg"
+  },
+  {
+      "id": 8,
+      "title": "Project Eight",
+      "deployedLink": "http://...",
+      "githubLink": "http://...",
+      "image": "project1.jpg"
+  }
+]

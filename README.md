@@ -47,7 +47,7 @@ To run this project locally:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd react-portfolio
+   cd portfolio
    ```
 3. Install dependencies:
    ```bash
@@ -65,6 +65,7 @@ To run this project locally:
 my-portfolio/
 │
 ├── public/
+│   └── images/
 │   └── index.html
 │
 ├── src/
@@ -74,9 +75,12 @@ my-portfolio/
 │   │   ├── Projects.js
 │   │   ├── Project.js
 │   │   └── Contact.js
+│   ├── data/
+│   │   ├── projectsData.json
+│   ├── js/
+│   ├── styles/
 │   ├── App.js
-│   ├── index.js
-│   └── projectsData.json
+│   └── index.js
 │
 └── package.json
 ```
