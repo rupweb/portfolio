@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import helloWorld from '../js/javascript.js';
+import helloWorld from '../src/js/javascript.js';
 
 describe('string tests', () => {
   test('check string', () => {

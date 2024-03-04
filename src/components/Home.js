@@ -3,9 +3,9 @@ import React from 'react';
 function Home() {
   return (
     <div>
-      <h1>Your Name</h1>
-      <img src="path_to_your_headshot.jpg" alt="Your Headshot" />
-      <p>Your Brand Statement</p>
+      <h1>Rupert St John Webster</h1>
+      <img src="/images/mugshot.jpg" alt="Rupert St John Webster" />
+      <p>Brand Statement</p>
     </div>
   );
 }
