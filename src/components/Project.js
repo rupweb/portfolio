@@ -1,12 +1,14 @@
 import React from 'react';
 
-function Project({ project }) {
+function Project({ title, image, url, github }) {
+  const path = `/images/${image}`;
+
   return (
     <div>
-      <h3>{project.title}</h3>
-      <a href={project.deployedLink}>Deployed Project</a>
-      <a href={project.githubLink}>GitHub Repo</a>
-      <img src={project.image} alt={project.title} />
+      <h3>{title}</h3>
+      <a href={url}>Deployed Project</a>
+      <a href={github}>GitHub Repo</a>
+      <img src={path} alt={title} />
     </div>
   );
 }

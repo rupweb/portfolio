@@ -1,58 +1,66 @@
 [
   {
     "id": 1,
-    "title": "Project One",
-    "deployedLink": "http://...",
-    "githubLink": "http://...",
-    "image": "project1.jpg"
+    "title": "Bootcamp Starter",
+    "image": "project1.jpg",
+    "tech": "HTML, CSS, Bootstrap",
+    "url": "https://rupweb.github.io/bootcamp-module1-challenge/starter/",
+    "github": "https://github.com/rupweb/bootcamp-module1-challenge"
   },
   {
     "id": 2,
-    "title": "Project Two",
-    "deployedLink": "http://...",
-    "githubLink": "http://...",
-    "image": "project1.jpg"
+    "title": "Bootstrap Portfolio",
+    "image": "project2.jpg",
+    "tech": "HTML, CSS, Bootstrap",
+    "url": "https://rupweb.github.io/bootstrap-portfolio/",
+    "github": "https://github.com/rupweb/bootstrap-portfolio"
   },
   {
     "id": 3,
-    "title": "Project Three",
-    "deployedLink": "http://...",
-    "githubLink": "http://...",
-    "image": "project1.jpg"
+    "title": "Console Finances",
+    "image": "project3.jpg",
+    "tech": "HTML, CSS, Bootstrap, Jest",
+    "url": " http://rupweb.github.io/console-finances/",
+    "github": "https://github.com/rupweb/console-finances"
   },
   {
     "id": 4,
-    "title": "Project Four",
-    "deployedLink": "http://...",
-    "githubLink": "http://...",
-    "image": "project1.jpg"
+    "title": "Password Generator",
+    "image": "project4.jpg",
+    "tech": "HTML, CSS, Bootstrap, Jest",
+    "url": "https://rupweb.github.io/password-generator/",
+    "github": "https://github.com/rupweb/password-generator"
   },
   {
     "id": 5,
-    "title": "Project Five",
-    "deployedLink": "http://...",
-    "githubLink": "http://...",
-    "image": "project1.jpg"
+    "title": "Coding Quiz",
+    "image": "project5.jpg",
+    "tech": "HTML, CSS, Bootstrap, Jest",
+    "url": "https://rupweb.github.io/coding-quiz/",
+    "github": "https://github.com/rupweb/coding-quiz"
   },
   {
-      "id": 6,
-      "title": "Project Six",
-      "deployedLink": "http://...",
-      "githubLink": "http://...",
-      "image": "project1.jpg"
+    "id": 6,
+    "title": "Workday Scheduler",
+    "image": "project6.jpg",
+    "tech": "HTML, CSS, Bootstrap, Jest",
+    "url": "https://rupweb.github.io/workday-scheduler/",
+    "github": "https://github.com/rupweb/workday-scheduler"
   },
   {
     "id": 7,
-    "title": "Project Seven",
-    "deployedLink": "http://...",
-    "githubLink": "http://...",
-    "image": "project1.jpg"
+    "title": "Eataway",
+    "image": "project7.jpg",
+    "tech": "HTML, CSS, Bootstrap, Jest, Cypress, AWS",
+    "url": "https://uvee35.github.io/Eataway-Website/",
+    "github": "https://github.com/uvee35/Eataway-Website"
   },
   {
-      "id": 8,
-      "title": "Project Eight",
-      "deployedLink": "http://...",
-      "githubLink": "http://...",
-      "image": "project1.jpg"
+    "id": 8,
+    "title": "Portfolio",
+    "image": "project8.jpg",
+    "tech": "HTML, CSS, React, Bootstrap, Jest, AWS",
+    "url": "https://rupweb.github.io/portfolio/",
+    "github": "https://github.com/rupweb/portfolio"
   }
 ]

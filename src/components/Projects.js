@@ -6,7 +6,14 @@ function Projects() {
   return (
     <div>
       {projectsData.map(project => (
-        <Project key={project.id} project={project} />
+        <Project
+          key={project.id}
+          title={project.title}
+          image={project.image}
+          tech={project.tech}
+          url={project.url}
+          github={project.github}
+        />
       ))}
     </div>
   );
