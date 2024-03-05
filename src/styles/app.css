@@ -1,0 +1,35 @@
+/* App.css */
+.container1 {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  
+  .header, .footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .column {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .column > div {
+    padding: 10px;
+    background-color: #ddd;
+    text-align: center;
+  }
+  
+  .main-content {
+    grid-column: 2; /* Adjust based on your layout */
+  }
