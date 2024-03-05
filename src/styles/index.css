@@ -8,7 +8,7 @@ body {
   }
   
   a {
-    color: #007bff;
+    color: #00b7ff;
     text-decoration: none;
   }
   
@@ -24,13 +24,6 @@ body {
   .container {
     width: 90%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1600px;
   }
-  
-  /* Import other CSS files */
-  @import './header.css';
-  @import './home.css';
-  @import './projects.css';
-  @import './project.css';
-  @import './contact.css';
   

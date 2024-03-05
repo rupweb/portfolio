@@ -5,7 +5,7 @@ function Home() {
     <div>
       <h1>Rupert St John Webster</h1>
       <img src="/images/mugshot.jpg" alt="Rupert St John Webster" />
-      <p>Brand Statement</p>
+      <p>Web Engineering</p>
     </div>
   );
 }

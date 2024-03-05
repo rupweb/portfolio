@@ -1,14 +1,18 @@
 import React from 'react';
+import '../styles/images.css'
+import '../styles/project.css'
 
-function Project({ title, image, url, github }) {
+function Project({ title, image, tech, url, github }) {
   const path = `/images/${image}`;
 
   return (
-    <div>
+    <div className="column">
       <h3>{title}</h3>
-      <a href={url}>Deployed Project</a>
-      <a href={github}>GitHub Repo</a>
       <img src={path} alt={title} />
+      <p>{tech}</p>
+      <p>
+        <a href={url}>View Project</a> | <a href={github}>GitHub</a>
+      </p>
     </div>
   );
 }

@@ -1,11 +1,23 @@
-/* project.css */
 .project {
   background: white;
-  border: 1px solid #ddd;
+  border: 1px solid #192841; /* Blue border */
   padding: 15px;
   border-radius: 4px;
 }
 
 .project h3 {
   margin-top: 0;
+  margin-bottom: 5px; /* Reduced bottom margin for title */
+}
+
+.project img {
+  display: block;
+  width: 100%; /* Ensure image takes full width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 5px; /* Reduced bottom margin for image */
+}
+
+.project p {
+  margin-top: 0;
+  margin-bottom: 5px; /* Reduced bottom margin for paragraphs */
 }

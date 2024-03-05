@@ -1,8 +1,13 @@
-/* projects.css */
-.projects {
+.projects-container {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; 
+  max-width: 1600px; /* Adjust the maximum width of the grid */
   padding: 20px;
 }
 
