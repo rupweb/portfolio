@@ -1,0 +1,20 @@
+.two-columns-right {
+    display: flex;
+  }
+  
+  .left-column-right {
+    /* Grow to use available space, don't shrink, start with more than 50% width */
+    flex: 1 0 60%;
+  }
+  
+  .right-column-right {
+    /* Don't grow or shrink, just fit the content */
+    flex: 0 0 auto; 
+  }
+  
+  .right-column-right img {
+    display: block; /* Removes any extra space around the image */
+    width: auto; /* Use the natural width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

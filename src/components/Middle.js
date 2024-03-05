@@ -7,9 +7,6 @@ import Testimonials from './Testimonials.js';
 const Middle = () => (
   <div className="column">
     <Home />
-    <Projects />
-    <Contact />
-    <Testimonials />
   </div>
 );
 
