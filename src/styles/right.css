@@ -6,6 +6,7 @@
 .left-column-right {
   display: flex;
   flex-direction: column; /* Stack children vertically */
+  overflow-y: auto;
 }
 
 .right-column-right {
