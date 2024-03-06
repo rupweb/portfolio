@@ -16,7 +16,13 @@ Welcome to my web portfolio built with HTML, CSS, JS and React. Tested with Jest
 
 ## Introduction
 
-This portfolio is designed to be a comprehensive display of my work and skills in web development. It features a clean, responsive design and provides detailed information about my projects and professional journey.
+This portfolio is designed to be a display of my work and skills in web development.
+
+See the completed page at https://rupertportfolio.netlify.app/ 
+
+The github repo at https://github.com/rupweb/portfolio
+
+A github pages at https://rupweb.github.io/portfolio/
 
 ## Technologies Used
 
