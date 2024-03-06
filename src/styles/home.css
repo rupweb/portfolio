@@ -1,14 +1,19 @@
-/* home.css */
 .home {
   text-align: center;
   padding: 20px;
 }
 
 .home h1 {
-  color: #333;
+  padding: 40px;
+  color: #192841;
+}
+
+.home h2 {
+  padding: 40px;
+  color: #192841;
 }
 
 .home img {
-  border-radius: 50%;
-  max-width: 150px;
+  border-radius: 80%;
+  max-width: 300px;
 }

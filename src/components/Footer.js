@@ -1,6 +1,8 @@
+import '../styles/footer.css';
+
 export default function Footer() {
     return (
-      <footer>
+      <footer className="footer">
         <p>© 2024 My Portfolio</p>
       </footer>
     );

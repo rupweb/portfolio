@@ -10,6 +10,8 @@ import Left from './components/Left.js';
 import Right from './components/Right.js';
 import Middle from './components/Middle.js';
 import Projects from './components/Projects.js';
+import Contact from './components/Contact.js';
+import Testimonials from './components/Testimonials.js';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/testimonials" element={<LayoutWithSides><Testimonials /></LayoutWithSides>} />
+            <Route path="/contact" element={<LayoutWithSides><Contact /></LayoutWithSides>} />
           </Routes>
         </div>
         <Footer />
@@ -30,9 +34,17 @@ function App() {
 
 const HomePage = () => (
   <>
-    <Left />
-    <Middle />
-    <Right />
+    <div className="left-column"><Left /></div>
+    <div className="middle-column"><Middle /></div>
+    <div className="right-column"><Right /></div>
+  </>
+);
+
+const LayoutWithSides = ({ children }) => (
+  <>
+    <div className="left-column"><Left /></div>
+    <div className="middle-column">{children}</div>
+    <div className="right-column"><Right /></div>
   </>
 );
 

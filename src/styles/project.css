@@ -1,8 +1,9 @@
 .project {
   background: white;
   border: 1px solid #192841; /* Blue border */
-  padding: 15px;
-  border-radius: 4px;
+  padding: 10px; /* Reduced padding */
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds subtle shadow */
 }
 
 .project h3 {
@@ -17,7 +18,8 @@
   margin-bottom: 5px; /* Reduced bottom margin for image */
 }
 
-.project p {
+.project p, .project a {
   margin-top: 0;
-  margin-bottom: 5px; /* Reduced bottom margin for paragraphs */
+  margin-bottom: 5px; /* Reduced bottom margin for paragraphs and links */
+  font-size: 0.9em; /* Optional: adjust font size */
 }

@@ -10,6 +10,7 @@
 .right-column-left {
   display: flex;
   flex-direction: column; /* Stack children vertically */
+  overflow-y: auto;
 }
 
 .left-column-left img {

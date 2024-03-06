@@ -18,13 +18,19 @@ const Ticker = () => {
   const [stockData, setStockData] = useState([]);
 
   useEffect(() => {
-    fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=QQQ&apikey=4VT4IV2JBAHCZ1X8`)
+    fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=QQQ&interval=5min&apikey=4VT4IV2JBAHCZ1X8`)
       .then(response => response.json())
       .then(data => {
-        const timeSeries = data['Time Series (Daily)'];
-        const dates = Object.keys(timeSeries).reverse();
-        const closingPrices = dates.map(date => timeSeries[date]['4. close']);
-        setStockData({ dates, closingPrices });
+        if (data['Note'] || data['Information']) {
+          console.error('API limit reached or other information:', data);
+        } else if (data['Time Series (5min)']) {
+          const timeSeries = data['Time Series (5min)']; // Adjust according to the interval
+          const timestamps = Object.keys(timeSeries).reverse();
+          const closingPrices = timestamps.map(timestamp => timeSeries[timestamp]['4. close']);
+          setStockData({ timestamps, closingPrices });
+        } else {
+          console.error('Unexpected response', data);
+        }
       })
       .catch(error => {
         console.error('Error fetching stock data', error);
@@ -32,10 +38,10 @@ const Ticker = () => {
   }, []);
 
   const chartData = {
-    labels: stockData.dates,
+    labels: stockData.timestamps,
     datasets: [
       {
-        label: 'QQQ Closing Prices',
+        label: 'QQQ Intraday Prices (5min intervals)',
         data: stockData.closingPrices,
         fill: false,
         borderColor: 'rgb(75, 192, 192)',
@@ -49,7 +55,10 @@ const Ticker = () => {
       x: {
         type: 'time',
         time: {
-          unit: 'day'
+          unit: 'minute',
+          displayFormats: {
+            minute: 'HH:mm'
+          }
         }
       },
       y: {

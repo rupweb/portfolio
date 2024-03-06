@@ -23,15 +23,28 @@ html, body {
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr; /* 3 columns layout */
   gap: 10px;
   padding: 10px;
+}
+
+.left-column {
+  grid-column: 1; /* first column */
+}
+
+.middle-column {
+  grid-column: 2; /* middle column */
+}
+
+.right-column {
+  grid-column: 3; /* third column */
 }
 
 .column {
   display: grid;
   gap: 10px;
   height: 100%; /* Make each column use available height */
+  max-height: 925px;
 }
 
 .column > div {
