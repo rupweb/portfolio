@@ -1,20 +1,67 @@
 .two-columns-right {
-    display: flex;
-  }
-  
-  .left-column-right {
-    /* Grow to use available space, don't shrink, start with more than 50% width */
-    flex: 1 0 60%;
-  }
-  
-  .right-column-right {
-    /* Don't grow or shrink, just fit the content */
-    flex: 0 0 auto; 
-  }
-  
-  .right-column-right img {
-    display: block; /* Removes any extra space around the image */
-    width: auto; /* Use the natural width of the image */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
+  display: flex;
+  gap: 10px;
+}
+
+.left-column-right {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.right-column-right {
+  flex: 0 0 auto; /* Don't grow or shrink, just fit the content */ 
+}
+
+.right-column-right img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Added styles for news list */
+.left-column-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.left-column-right ul li {
+  font-family: 'Cyberpunk-Font', sans-serif;
+  font-size: 1em;
+  overflow: auto;
+  text-overflow: ellipsis;
+  padding: 5px 5px;
+  margin: 2px 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: pink #192841;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.left-column-right ul li:nth-child(odd) {
+  background-color: #192841; /* Dark background for contrast */
+  color: pink;
+}
+
+.left-column-right ul li:nth-child(even) {
+  background-color: #192841; /* Dark background for contrast */
+  color: lightskyblue;
+}
+
+/* Style for custom scrollbar */
+.left-column-right ul li::-webkit-scrollbar {
+  height: 4px;
+}
+
+.left-column-right ul li::-webkit-scrollbar-track {
+  background: #192841;
+}
+
+.left-column-right ul li::-webkit-scrollbar-thumb {
+  background-color: pink; 
+  border-radius: 20px;
+  border: 3px solid lightskyblue;
+}

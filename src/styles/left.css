@@ -3,18 +3,18 @@
   gap: 10px;
 }
 
-.left-column {
-  /* Don't grow or shrink, just fit the content */
-  flex: 0 0 auto; 
+.left-column-left {
+  flex: 0 0 auto; /* Don't grow or shrink, just fit the content */
 }
 
-.left-column img {
+.right-column-left {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.left-column-left img {
   display: block; /* Removes any extra space around the image */
   width: auto; /* Use the natural width of the image */
   height: auto; /* Maintain aspect ratio */
 }
 
-.right-column {
-  /* Grow to use available space, don't shrink, start at 50% width */
-  flex: 1 0 50%;
-}
