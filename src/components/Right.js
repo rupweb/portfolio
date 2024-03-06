@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Clock from 'react-live-clock';
 import '../styles/right.css';
 
 const Right = () => {
@@ -21,8 +22,14 @@ const Right = () => {
   return (
     <div className="two-columns-right">
       <div className="column left-column-right">
-        <div>Row 1</div>
         <div>
+          {/* Clock component */}
+          <h1>
+            <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
+          </h1>
+        </div>
+        <div>
+          {/* News articles list */}
           <ul>
             {articles.map((article, index) => (
               <li key={index}>{article.title}</li>
