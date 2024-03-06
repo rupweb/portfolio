@@ -12,6 +12,7 @@ import Middle from './components/Middle.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
 import Testimonials from './components/Testimonials.js';
+import NotFound from './components/NotFound.js';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/testimonials" element={<LayoutWithSides><Testimonials /></LayoutWithSides>} />
             <Route path="/contact" element={<LayoutWithSides><Contact /></LayoutWithSides>} />
+            <Route path="*" element={<LayoutWithSides><NotFound /></LayoutWithSides>} />
           </Routes>
         </div>
         <Footer />

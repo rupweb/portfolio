@@ -30,7 +30,7 @@ export default function ContactPage() {
                     Email: <a href="mailto:rupert@webstersystems.co.uk">rupert@webstersystems.co.uk</a>
                 </p>
                 <p>
-                    CV: <a href="/rupertstjohnwebster.pdf" target="_blank">Rupert St John Webster</a>
+                    CV: <a href={"/RupertStJohnWebster.pdf"} target="_blank" rel="noopener noreferrer">Rupert St John Webster</a>
                 </p>
                 <p>
                     GitHub: <a href="https://github.com/rupweb" target="_blank">rupweb</a>
