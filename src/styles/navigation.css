@@ -51,7 +51,7 @@ nav {
   }
   
   nav ul li a:hover {
-    background-color: #0B6623; /* Green background on hover */
+    background-color: purple; /* Green background on hover */
     color: white;
     text-decoration: none;
   }

@@ -14,11 +14,6 @@ function Header() {
       </div>
       <div className="nav-group">
         <ul>
-          <li><Link to="/contact">Challenge</Link></li>
-        </ul>
-      </div>
-      <div className="nav-group">
-        <ul>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
