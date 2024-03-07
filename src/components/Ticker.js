@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, TimeScale } from 'chart.js';
 import 'chartjs-adapter-date-fns';
+import '../styles/chart.css';
 
 ChartJS.register(
   CategoryScale,
@@ -51,6 +52,7 @@ const Ticker = () => {
   };
 
   const options = {
+    responsive: true,
     scales: {
       x: {
         type: 'time',
@@ -68,7 +70,7 @@ const Ticker = () => {
   };
 
   return (
-    <div>
+    <div className="chart-container">
       <Line data={chartData} options={options} />
     </div>
   );

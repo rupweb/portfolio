@@ -23,11 +23,11 @@ function App() {
         <Header />
         <div className="content">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/projects" element={<LayoutProject />} />
-            <Route path="/testimonials" element={<LayoutSides><Testimonials /></LayoutSides>} />
-            <Route path="/contact" element={<LayoutSides><Contact /></LayoutSides>} />
-            <Route path="*" element={<LayoutSides><NotFound /></LayoutSides>} />
+            <Route path="/" element={<Layout><Middle /></Layout>} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/testimonials" element={<Layout><Testimonials /></Layout>} />
+            <Route path="/contact" element={<Layout><Contact /></Layout>} />
+            <Route path="*" element={<Layout><NotFound /></Layout>} />
           </Routes>
         </div>
         <Footer />
@@ -36,27 +36,21 @@ function App() {
   );
 }
 
-const HomePage = () => (
+const Layout = ({ children }) => (
   <>
-    <div className="left-column"><Left /></div>
-    <div className="middle-column"><Middle /></div>
-    <div className="right-column"><Right /></div>
-  </>
-);
-
-const LayoutSides = ({ children }) => (
-  <>
+    <div className="left-side-column"><LeftSide /></div>
     <div className="left-column"><Left /></div>
     <div className="middle-column">{children}</div>
     <div className="right-column"><Right /></div>
+    <div className="right-side-column"><RightSide /></div>
   </>
 );
 
-const LayoutProject = () => (
+const Project = () => (
   <>
-    <div className="left-column"><LeftSide /></div>
+    <div className="left-side-column"><LeftSide /></div>
     <div className="middle-column"><Projects /></div>
-    <div className="right-column"><RightSide /></div>
+    <div className="right-side-column"><RightSide /></div>
   </>
 );
 
