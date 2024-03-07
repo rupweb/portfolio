@@ -40,9 +40,6 @@ const Right = () => {
           </ul>
         </div>
       </div>
-      <div className="column right-column-right">
-        <img src="/images/right.jpg" alt="Right Image" />
-      </div>
     </div>
   );
 };

@@ -7,15 +7,27 @@
   flex: 0 0 auto; /* Don't grow or shrink, just fit the content */
 }
 
-.right-column-left {
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  overflow-y: auto;
-}
-
 .left-column-left img {
   display: block; /* Removes any extra space around the image */
   width: auto; /* Use the natural width of the image */
   height: auto; /* Maintain aspect ratio */
+}x
+
+.right-column-left {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  overflow-y: auto;
+  flex-grow: 1; /* Allow the column to grow */
+  flex-shrink: 1; /* Allow the column to shrink */
 }
 
+.right-column-left img {
+  width: 100%;
+  display: block; /* Removes any extra space around the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for chart */
+.ticker-container {
+  flex-grow: 1; /* Allow ticker to grow and shrink */
+}

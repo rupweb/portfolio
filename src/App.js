@@ -8,6 +8,8 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Left from './components/Left.js';
 import Right from './components/Right.js';
+import LeftSide from './components/LeftSide.js';
+import RightSide from './components/RightSide.js';
 import Middle from './components/Middle.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
@@ -21,11 +23,11 @@ function App() {
         <Header />
         <div className="content">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/testimonials" element={<LayoutWithSides><Testimonials /></LayoutWithSides>} />
-            <Route path="/contact" element={<LayoutWithSides><Contact /></LayoutWithSides>} />
-            <Route path="*" element={<LayoutWithSides><NotFound /></LayoutWithSides>} />
+            <Route path="/" element={<Layout><Middle /></Layout>} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/testimonials" element={<Layout><Testimonials /></Layout>} />
+            <Route path="/contact" element={<Layout><Contact /></Layout>} />
+            <Route path="*" element={<Layout><NotFound /></Layout>} />
           </Routes>
         </div>
         <Footer />
@@ -34,19 +36,21 @@ function App() {
   );
 }
 
-const HomePage = () => (
+const Layout = ({ children }) => (
   <>
-    <div className="left-column"><Left /></div>
-    <div className="middle-column"><Middle /></div>
-    <div className="right-column"><Right /></div>
-  </>
-);
-
-const LayoutWithSides = ({ children }) => (
-  <>
+    <div className="left-side-column"><LeftSide /></div>
     <div className="left-column"><Left /></div>
     <div className="middle-column">{children}</div>
     <div className="right-column"><Right /></div>
+    <div className="right-side-column"><RightSide /></div>
+  </>
+);
+
+const Project = () => (
+  <>
+    <div className="left-side-column"><LeftSide /></div>
+    <div className="middle-column"><Projects /></div>
+    <div className="right-side-column"><RightSide /></div>
   </>
 );
 

@@ -3,17 +3,26 @@
   gap: 10px;
 }
 
-.left-column-right {
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  overflow-y: auto;
-}
-
 .right-column-right {
   flex: 0 0 auto; /* Don't grow or shrink, just fit the content */ 
 }
 
 .right-column-right img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.left-column-right {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  overflow-y: auto;
+  flex-grow: 1; /* Allow the column to grow */
+  flex-shrink: 1; /* Allow the column to shrink */
+}
+
+.left-column-right img {
+  width: 100%;
   display: block;
   width: auto;
   height: auto;
