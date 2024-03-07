@@ -29,6 +29,9 @@ const Right = () => {
           </h1>
         </div>
         <div>
+          <img src="/images/cyber3.jpg" alt="Cyber Image" />
+        </div>
+        <div>
           {/* News articles list */}
           <ul>
             {articles.map((article, index) => (
@@ -36,7 +39,6 @@ const Right = () => {
             ))}
           </ul>
         </div>
-        <img src="/images/cyber3.jpg" alt="Cyber Image" />
       </div>
       <div className="column right-column-right">
         <img src="/images/right.jpg" alt="Right Image" />

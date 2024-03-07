@@ -1,4 +1,3 @@
-// Left.js
 import React from 'react';
 import Ticker from './Ticker.js'; // Import the Ticker component
 import '../styles/left.css';

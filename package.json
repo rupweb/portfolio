@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@juggle/resize-observer": "^3.4.0",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.2",
     "chartjs-adapter-date-fns": "^3.0.0",
@@ -29,18 +30,30 @@
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
     "babel-jest": "^29.7.0",
+    "canvas": "^2.11.2",
     "cypress": "^13.6.6",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-transform-stub": "^2.0.0",
+    "whatwg-fetch": "^3.6.20"
   },
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
     "moduleNameMapper": {
-      "^node-fetch$": "<rootDir>\\node_modules\\node-fetch\\dist\\index.cjs"
+      "^node-fetch$": "<rootDir>\\node_modules\\node-fetch\\dist\\index.cjs",
+      "_comment": "Below mocks CSS and image files",
+      "\\.(css|less)$": "jest-transform-stub",
+      "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/src/js/filemock.js"
     },
-    "testEnvironment": "node"
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "testEnvironment": "jsdom"
   },
   "babel": {
     "presets": [

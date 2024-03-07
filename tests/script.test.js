@@ -1,7 +1,3 @@
-/**
- * @jest-environment jsdom
- */
-
 import helloWorld from '../src/js/javascript.js';
 
 describe('string tests', () => {

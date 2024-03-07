@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { addFormData } from '../js/form.js'; 
 import '../styles/contact.css'; 
 
 export default function ContactPage() {
@@ -14,12 +15,17 @@ export default function ContactPage() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    // Function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Here, you would handle the submission, e.g., sending data to a server
-        console.log(formData);
-        alert('Message sent!');
+
+        console.log(e);
+        addFormData(formData.name, formData.email, formData.message)
+            .then(() => {
+                console.log('Data submitted to S3');
+            })
+            .catch(error => {
+                console.error('Error submitting data:', error);
+            });
     };
 
     return (
@@ -39,7 +45,7 @@ export default function ContactPage() {
                     LinkedIn: <a href="https://www.linkedin.com/in/rupertstjw" target="_blank">rupertstjw</a>
                 </p>
 
-                <form onSubmit={handleSubmit}>
+                <form id="theForm" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
                         <input

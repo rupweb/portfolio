@@ -10,6 +10,7 @@ Welcome to my web portfolio built with HTML, CSS, JS and React. Tested with Jest
 - [Features](#features)
 - [How to Run Locally](#how-to-run-locally)
 - [Project Structure](#project-structure)
+- [Tests](#tests)
 - [Contributing](#contributing)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
@@ -90,6 +91,10 @@ my-portfolio/
 │
 └── package.json
 ```
+
+## Tests
+
+To run a specific test type `jest script.test.js`
 
 ## Contributing
 
