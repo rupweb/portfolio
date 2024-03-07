@@ -4,10 +4,15 @@ html, body {
   padding: 0; /* reset */
 }
 
+p {
+  margin: 0; /* reset */
+  padding: 0; /* reset */
+}
+
 .contact {
-  text-align: center; /* Center text */
+  display: flex;
   flex-direction: column;
-  align-items: center; /* Center flex items */
+  align-items: left;
   padding: 20px;
   max-width: 600px; /* Set a max width for the box */
   margin: 0 auto; /* Center the box */
@@ -26,15 +31,26 @@ html, body {
   gap: 20px;
 }
 
-.contact form input, .contact form textarea {
+.contact form input, .contact form textarea, .contact form button {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
   border-radius: 10px;
 }
 
+/* Adjustments for smaller screens */
 @media (max-width: 600px) {
   .contact form {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .contact form input, .contact form textarea {
+    padding: 8px;
+    margin: 4px 0;
+  }
+
+  .contact form button {
+    padding: 12px;
+    font-size: 1em; /* Adjust font size if needed */
   }
 }

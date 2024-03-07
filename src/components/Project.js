@@ -11,7 +11,7 @@ function Project({ title, image, tech, url, github }) {
       <img src={path} alt={title} />
       <p>{tech}</p>
       <p>
-        <a href={url} target="_blank" rel="noopener noreferrer">View Project</a> | 
+        <a href={url} target="_blank" rel="noopener noreferrer">View Project</a> | {' '}
         <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
     </div>

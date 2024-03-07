@@ -45,6 +45,7 @@ export default function ContactPage() {
                     LinkedIn: <a href="https://www.linkedin.com/in/rupertstjw" target="_blank">rupertstjw</a>
                 </p>
 
+                <br/>
                 <form id="theForm" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
