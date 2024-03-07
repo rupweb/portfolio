@@ -8,6 +8,8 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Left from './components/Left.js';
 import Right from './components/Right.js';
+import LeftSide from './components/LeftSide.js';
+import RightSide from './components/RightSide.js';
 import Middle from './components/Middle.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
@@ -22,10 +24,10 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/testimonials" element={<LayoutWithSides><Testimonials /></LayoutWithSides>} />
-            <Route path="/contact" element={<LayoutWithSides><Contact /></LayoutWithSides>} />
-            <Route path="*" element={<LayoutWithSides><NotFound /></LayoutWithSides>} />
+            <Route path="/projects" element={<LayoutProject />} />
+            <Route path="/testimonials" element={<LayoutSides><Testimonials /></LayoutSides>} />
+            <Route path="/contact" element={<LayoutSides><Contact /></LayoutSides>} />
+            <Route path="*" element={<LayoutSides><NotFound /></LayoutSides>} />
           </Routes>
         </div>
         <Footer />
@@ -42,11 +44,19 @@ const HomePage = () => (
   </>
 );
 
-const LayoutWithSides = ({ children }) => (
+const LayoutSides = ({ children }) => (
   <>
     <div className="left-column"><Left /></div>
     <div className="middle-column">{children}</div>
     <div className="right-column"><Right /></div>
+  </>
+);
+
+const LayoutProject = () => (
+  <>
+    <div className="left-column"><LeftSide /></div>
+    <div className="middle-column"><Projects /></div>
+    <div className="right-column"><RightSide /></div>
   </>
 );
 
